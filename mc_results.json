@@ -1,0 +1,141 @@
+{
+  "paper_id": "cybercrime",
+  "config_file": "pipeline/mc_configs/cybercrime.json",
+  "seed": 42,
+  "n_draws": 100000,
+  "n_channels": 6,
+  "correlation_rho": 0.3,
+  "private_payoff_B": 1000.0,
+  "beta_w": {
+    "median": 6.22,
+    "mean": 6.43,
+    "std": 1.58,
+    "p1": 3.64,
+    "p5": 4.23,
+    "p95": 9.32,
+    "p99": 11.1,
+    "ci_90": [
+      4.2,
+      9.3
+    ],
+    "ci_99": [
+      3.6,
+      11.1
+    ],
+    "p_below_1": 0.0,
+    "p_below_1_pct": "0.0000%"
+  },
+  "impossibility_floor": {
+    "floor_value": 2.1,
+    "p_below_floor": 0.0,
+    "p_below_floor_pct": "0.0000%"
+  },
+  "welfare_cost": {
+    "total_median_B": 6221.4,
+    "total_mean_B": 6426.7,
+    "total_p5_B": 4227.7,
+    "total_p95_B": 9316.9
+  },
+  "pi_sa": {
+    "median_B": 5221.4,
+    "mean_B": 5426.7,
+    "p5_B": 3227.7,
+    "p95_B": 8316.9
+  },
+  "channel_statistics": {
+    "C1_financial_extraction": {
+      "median": 59.9,
+      "mean": 65.5,
+      "p5": 29.9,
+      "p95": 119.7,
+      "std": 28.8
+    },
+    "C2_business_downtime": {
+      "median": 1499.1,
+      "mean": 1541.3,
+      "p5": 1021.4,
+      "p95": 2206.2,
+      "std": 365.3
+    },
+    "C3_ip_theft": {
+      "median": 2398.5,
+      "mean": 2580.5,
+      "p5": 1280.5,
+      "p95": 4496.4,
+      "std": 1025.6
+    },
+    "C4_infrastructure": {
+      "median": 1001.1,
+      "mean": 1066.2,
+      "p5": 554.5,
+      "p95": 1796.9,
+      "std": 394.6
+    },
+    "C5_consumer_harm": {
+      "median": 897.8,
+      "mean": 954.8,
+      "p5": 507.2,
+      "p95": 1593.0,
+      "std": 344.5
+    },
+    "C6_governance": {
+      "median": 199.7,
+      "mean": 218.4,
+      "p5": 100.1,
+      "p95": 399.9,
+      "std": 96.3
+    }
+  },
+  "sensitivity_matrix": [
+    {
+      "vsl_multiplier": 0.5,
+      "values": {
+        "dc_0pct": 4.86,
+        "dc_10pct": 4.37,
+        "dc_20pct": 3.89,
+        "dc_30pct": 3.4,
+        "dc_40pct": 2.92
+      }
+    },
+    {
+      "vsl_multiplier": 0.75,
+      "values": {
+        "dc_0pct": 5.46,
+        "dc_10pct": 4.91,
+        "dc_20pct": 4.37,
+        "dc_30pct": 3.82,
+        "dc_40pct": 3.28
+      }
+    },
+    {
+      "vsl_multiplier": 1.0,
+      "values": {
+        "dc_0pct": 6.06,
+        "dc_10pct": 5.45,
+        "dc_20pct": 4.85,
+        "dc_30pct": 4.24,
+        "dc_40pct": 3.64
+      }
+    },
+    {
+      "vsl_multiplier": 1.25,
+      "values": {
+        "dc_0pct": 6.66,
+        "dc_10pct": 5.99,
+        "dc_20pct": 5.33,
+        "dc_30pct": 4.66,
+        "dc_40pct": 4.0
+      }
+    },
+    {
+      "vsl_multiplier": 1.5,
+      "values": {
+        "dc_0pct": 7.26,
+        "dc_10pct": 6.53,
+        "dc_20pct": 5.81,
+        "dc_30pct": 5.08,
+        "dc_40pct": 4.36
+      }
+    }
+  ]
+}
